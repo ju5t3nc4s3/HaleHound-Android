@@ -1,3 +1,7 @@
+This not compleate ,, and I wont copleat it ,, 
+A port of the Halehound firmware to a full android APK,  using OTG out to usb hub for all radio moduals.
+
+
 # HaleHound Android — HAL Shim Port
 
 Ports HaleHound-CYD (https://github.com/JesseCHale/HaleHound-CYD) ESP32 firmware to Android
