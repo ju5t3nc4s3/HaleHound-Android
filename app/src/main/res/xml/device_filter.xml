@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CH341A USB-SPI bridge (NRF24 + CC1101) -->
+    <usb-device vendor-id="0x1A86" product-id="0x5512" />
+    <usb-device vendor-id="0x1A86" product-id="0x5523" />
+    <!-- CP2102 USB-UART bridge (GPS) -->
+    <usb-device vendor-id="0x10C4" product-id="0xEA60" />
+    <!-- Alfa AWUS036ACH optional monitor-mode WiFi -->
+    <usb-device vendor-id="0x0BDA" product-id="0x8812" />
+</resources>

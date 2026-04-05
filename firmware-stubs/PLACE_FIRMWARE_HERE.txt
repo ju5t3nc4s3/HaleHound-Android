@@ -1,0 +1,47 @@
+Copy the following files from the HaleHound-CYD repo into this directory.
+Run from the repo root:
+
+  git clone https://github.com/JesseCHale/HaleHound-CYD
+
+Then copy:
+
+  cp HaleHound-CYD/subghz_attacks.cpp   firmware-stubs/
+  cp HaleHound-CYD/subghz_attacks.h     firmware-stubs/
+  cp HaleHound-CYD/subconfig.cpp        firmware-stubs/
+  cp HaleHound-CYD/subconfig.h          firmware-stubs/
+  cp HaleHound-CYD/nrf24_attacks.cpp    firmware-stubs/
+  cp HaleHound-CYD/nrf24_attacks.h      firmware-stubs/
+  cp HaleHound-CYD/nrf24_config.cpp     firmware-stubs/
+  cp HaleHound-CYD/nrf24_config.h       firmware-stubs/
+  cp HaleHound-CYD/spi_manager.cpp      firmware-stubs/
+  cp HaleHound-CYD/spi_manager.h        firmware-stubs/
+  cp HaleHound-CYD/eapol_capture.cpp    firmware-stubs/
+  cp HaleHound-CYD/eapol_capture.h      firmware-stubs/
+  cp HaleHound-CYD/karma_attack.cpp     firmware-stubs/
+  cp HaleHound-CYD/karma_attack.h       firmware-stubs/
+  cp HaleHound-CYD/wardriving.cpp       firmware-stubs/
+  cp HaleHound-CYD/wardriving.h         firmware-stubs/
+  cp HaleHound-CYD/gps_module.cpp       firmware-stubs/
+  cp HaleHound-CYD/gps_module.h         firmware-stubs/
+  cp HaleHound-CYD/gps.h               firmware-stubs/
+  cp HaleHound-CYD/utils.cpp            firmware-stubs/
+  cp HaleHound-CYD/utils.h              firmware-stubs/
+  cp HaleHound-CYD/shared.h             firmware-stubs/
+  cp HaleHound-CYD/cyd_config.h         firmware-stubs/
+
+DO NOT copy these — they are replaced by Kotlin equivalents:
+  wifi_attacks.cpp / wifi_attacks.h
+  bluetooth_attacks.cpp / bluetooth_attacks.h
+
+DO NOT copy display/touch files (no screen on Android):
+  touch_buttons.cpp/h
+  CYD28_TouchscreenR.cpp/h
+  wardriving_screen.cpp/h
+  serial_monitor.cpp/h
+  firmware_update.cpp/h
+  icon.h, skull_bg.h, nuke_icon.h, nosifer_font.h
+
+After copying, some files may reference TFT_eSPI or display functions.
+Search for "tft." and "display" calls and stub them out with:
+  inline void stub_display(...) {}
+or simply comment them out — they are not needed for the RF attack logic.
