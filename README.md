@@ -1,4 +1,4 @@
-This not compleate ,, and I wont copleat it ,, 
+This not compleate ,, and not going to be done by me ,, 
 A port of the Halehound firmware to a full android APK,  using OTG out to usb hub for all radio moduals.
 
 
